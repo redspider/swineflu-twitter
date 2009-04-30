@@ -1,0 +1,224 @@
+html {
+    font-family: Arial, sans-serif;
+    font-size: 10pt;
+    background-color: #232323;
+    color: white;
+}
+
+body {
+    margin: 0px;
+}
+
+a {
+    color: #ddffdd;
+}
+
+div.column {
+    float: left;
+    width: 300px;
+    margin: 0px 20px 30px 20px;
+}
+
+    h3 {
+        color: white;
+        font-family: "Trebuchet MS", "Helvetica";
+        font-size: 14pt;
+        border-bottom: 1px solid #666666;
+    }
+
+    h4 {
+        color: white;
+        font-family: "Trebuchet MS", "Helvetica";
+        font-size: 12pt;
+        margin-top: 30px;
+        margin-bottom: 0px;
+        border-bottom: 1px solid #333;
+    }
+    
+    h5 {
+        color: white;
+        font-family: "Trebuchet MS", "Helvetica";
+        font-size: 10pt;
+        margin-bottom: 0px;
+    }
+
+dl {
+    font-size: 9pt;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+#footer {
+    clear: both;
+    text-align: center;
+    background-color: #333333;
+    margin-bottom: 0px;
+    padding-top: 30px;
+    margin-top: 20px;
+    padding-bottom: 5px;
+    font-size: 8pt;
+}
+
+#mobile_links {
+    display: none;
+}
+
+sup.footnote {
+    display: none;
+}
+
+div.preparation_section {
+    margin: 0px;
+    width: 680px;
+    float: left;
+    clear: left;
+}
+
+div.preparation {
+    margin: 0px 20px 30px 20px;
+    width: 640px;
+    clear: both;
+}
+
+.menu {
+    font-size: 8pt;
+}
+
+div.footnotes {
+    display: none;
+}
+
+p.menu_notes {
+    margin-top: 20px;
+    font-size: 8pt;
+}
+
+ul.prep_list {
+    font-size: 8pt;
+    list-style: square;
+    padding: 15px;
+}
+    .prep_list li {
+        margin-left: 0px;
+        margin-bottom: 2px;
+    }
+    
+.no_top_margin h4 {
+    margin-top: 0px;
+}
+
+div.sources {
+    clear: both;
+    height: 80px;
+    color: #aaaaaa;
+}
+
+div.info {
+    clear: both;
+    margin-top: 10px;
+}
+
+.sources ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.sources li {
+    text-align: left;
+    float: left;
+    width: 180px;
+    margin: 0px 20px 0px 20px;
+}
+
+table.status {
+    font-size: 8pt;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.status th {
+    color: #aaa;
+    font-weight: normal;
+    text-align: left;
+}
+
+.status td {
+    text-align: center;
+    color: black;
+}
+
+td.clear {
+    color: white;
+}
+
+*.yellow {
+    background-color: #ffcc00;
+}
+
+*.green {
+    background-color: #d0ff00;
+}
+
+*.who_3 {
+    background-color: #f89953;
+}
+
+*.who_4 {
+    background-color: #f26b4a;
+}
+
+*.who_5 {
+    background-color: #f2665e;
+}
+
+div.note {
+    color: #aaa;
+    text-align: right;
+}
+
+div.update_feed {
+    font-size: 8pt;
+}
+
+.update_feed h5 {
+    margin-top: 4px;
+    margin-bottom: 2px;
+}
+
+.update_feed div.author {
+    text-align: right;
+    font-style: italic;
+}
+
+div.message {
+    background-color: #282828;
+    padding: 4px 4px 4px 60px;
+    min-height: 48px;
+    position: relative;
+    color: #cccccc;
+    margin: 2px;
+    font-size: 8pt;
+}
+
+    .message .from_user a {
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+    
+    .message img.profile_image {
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        width: 48px;
+        height: 48px;
+    }

@@ -1,0 +1,20 @@
+div.column {
+    float: none;
+    width: 280px;
+    margin: 0px 10px 20px 10px;
+}
+
+#mobile_links {
+    display: block;
+}
+
+*.screen_only {
+    display: none;
+}
+
+
+div.preparation {
+    margin: 0px 10px 30px 10px;
+    width: 280px;
+    clear: both;
+}

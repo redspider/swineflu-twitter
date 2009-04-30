@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>H1N1 Dashboard</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/mootools/1.2.1/mootools-yui-compressed.js"></script>
+        <script type="text/javascript" src="/more.js"></script>
+        <script type="text/javascript" src="/static/Orbited.js"></script>
+        <script type="text/javascript">
+            TCPSocket = Orbited.TCPSocket
+        </script>
+        <script type="text/javascript" src="/static/protocols/stomp/stomp.js"></script>
+        <script type="text/javascript" src="/dashboard.js"></script>
+        <link rel="stylesheet" type="text/css" href="screen.css" />
+        <link rel="stylesheet" type="text/css" media="print" href="print.css" />
+        <link rel="stylesheet" href="mobile.css" media="handheld, only screen and (max-device-width: 480px)" type="text/css" />
+    </head>
+    <body>
+        <div class="column">
+            <h3>Twitter #swineflu</h3>
+            <div id="twitter">
+            </div>
+        </div>
+        <div class="column">
+            <h3>Twitter #swineflu (links)</h3>
+            <div id="twitter_links">
+            </div>
+        </div>
+        <div class="column">
+            <h3>Official/Reliable</h3>
+            <div id="reliable">
+            </div>
+        </div>
+        
+        
+        <script type="text/javascript">
+            window.addEvent('domready', function () {
+                dashboard_init();
+            });
+        </script>
+        
+    </body>
+</html>
+    

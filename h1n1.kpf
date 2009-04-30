@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Komodo Project File - DO NOT EDIT -->
+<project id="963e0e7d-b113-4604-9868-bb1267030122" kpf_version="4" name="h1n1.kpf">
+<command cwd="/Users/phi/Documents/h1n1" doNotOpenOutputWindow="0" env="" id="e03986a7-973e-b449-91bc-e975c18b66e4" idref="963e0e7d-b113-4604-9868-bb1267030122" insertOutput="0" keyboard_shortcut="" name="scp ./* richard@exorsus.net:/var/www/h1n1.co.nz/" operateOnSelection="0" parseOutput="0" parseRegex="" runIn="command-output-window" showParsedOutputList="0">
+scp ./* richard@exorsus.net:/var/www/h1n1.co.nz/</command>
+<preference-set idref="963e0e7d-b113-4604-9868-bb1267030122">
+  <boolean id="import_live">1</boolean>
+</preference-set>
+</project>

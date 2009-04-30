@@ -1,0 +1,27 @@
+html {
+    background-color: white;
+    color: black;
+}
+
+a {
+    color: black;
+}
+
+div.footnotes {
+    display: block;
+    clear: both;
+}
+
+#footer {
+    background-color: white;
+    border-top: 1px solid #aaaaaa;
+}
+
+
+*.screen_only {
+    display: none;
+}
+
+sup.footnote {
+    display: inline;
+}
