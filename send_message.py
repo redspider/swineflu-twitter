@@ -103,15 +103,15 @@ while True:
         print "Sending new entry: %s" % r['text'].encode('ascii','ignore')
         conn.send(simplejson.dumps(r), destination='/topic/%s' % channel)
         
-        wait = random.random()*4
+        wait = random.random()*2
 
         time.sleep(wait)
         waiting += wait  
     #conn.send(simplejson.dumps(dict(text="Happy test test", from_user="testtwitter", profile_image_url="http://s3.amazonaws.com/twitter_production/profile_images/186623658/hari_normal.jpg")), destination="/topic/twitter")
     
-    if waiting < 20.0:
+    if waiting < 10.0:
         print "Waiting %0.2fs til recall" % waiting
-        time.sleep(20.0-waiting)
+        time.sleep(10.0-waiting)
 
     #time.sleep(random.randint(30,60))
 
