@@ -260,4 +260,7 @@ ul.tabs {
 div.search {
     font-size: 8pt;
     color: #555;
+    position: relative;
+    top: -10px;
+    left: 10px;
 }
