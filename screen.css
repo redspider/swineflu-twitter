@@ -229,6 +229,7 @@ ul.tabs {
     height: 20px;
     position: relative;
     background-color: #111;
+    font-size: 12px;
 }
 
     .tabs li {
