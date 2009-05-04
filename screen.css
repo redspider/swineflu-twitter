@@ -264,3 +264,13 @@ div.search {
     top: -10px;
     left: 10px;
 }
+
+#redspider {
+    position: absolute;
+    width: 200px;
+    top: 5px;
+    right: 5px;
+    text-align: right;
+    color: #777;
+    font-size: 8pt;
+}
