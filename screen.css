@@ -222,3 +222,37 @@ div.message {
         width: 48px;
         height: 48px;
     }
+    
+ul.tabs {
+    margin: 0px;
+    padding: 2px 0px 0px 0px;
+    height: 20px;
+    position: relative;
+    background-color: #111;
+}
+
+    .tabs li {
+        float: left;
+        width: 120px;
+        height: 16px;
+        margin-left: 2px;
+        margin-right: 2px;
+        background-color: #171717;
+        text-align: center;
+        padding: 2px;
+    }
+    
+    .tabs a {
+        color: #ffcc00;
+        opacity: 0.5;
+        text-decoration: none;
+    }
+    
+    .tabs .selected {
+        color: #ffcc00;
+        text-decoration: none;
+    }
+    
+    .tabs li.selected {
+        background-color: #222;
+    }
