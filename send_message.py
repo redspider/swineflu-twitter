@@ -27,7 +27,7 @@ class TwitterSearch(object):
             query['since_id'] = self.last_id
 	try:
         	fh = urllib2.urlopen('http://search.twitter.com/search.json?%s' % urllib.urlencode(query))
-	except urllib2.URLError, e:
+	except Exception, e:
 		time.sleep(60)
 		return []
         result = simplejson.load(fh)
