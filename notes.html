@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>H1N1 Quick Information</title>
+        <link rel="stylesheet" type="text/css" href="screen.css" />
+        <link rel="stylesheet" type="text/css" media="print" href="print.css" />
+        <link rel="stylesheet" href="mobile.css" media="handheld, only screen and (max-device-width: 480px)" type="text/css" />
+        <script src="http://ajax.googleapis.com/ajax/libs/mootools/1.2.1/mootools-yui-compressed.js"></script>
+        <script src="script.js"></script>
+        <meta name="viewport" content="width=320" />
+    </head>
+    <body>
+        <ul class="tabs screen_only">
+            <li><a href="/">Information</a></li>
+            <li><a href="dashboard">Global dashboard</a></li>
+            <li class="selected">Notes</li>
+        </ul>
+        <div class="column" id="column1">
+            <h3>Notes</h3>
+            <p>
+                The dashboard provides a realtime view into the swine-flu related chatter of a large global population. Much of the chatter is humourous, pointless or even blatently incorrect, and due to the nature of twitter regularly duplicated. The conversation does have value however:
+            </p>
+            <dl>
+                <dt>Up to date</dt>
+                <dd>The conversation is almost certain to reference to breaking news of general interest, and the more interesting, the more duplicates and linking will occur, making it easier to spot within the noise.</dd>
+                <dt>Broad selection</dt>
+                <dd>While the individuals are self-selected and biased towards technically capable individuals, the barrier to "Tweeting" is low and as such the general tone of the conversation is a useful barometer for the current state of public opinion.</dd>
+                <dt>Link aggregation</dt>
+                <dd>A wide variety of useful links are being put up on the topic each day. Finding and evaluating these is an impossibly large task, however keeping half an eye on links being posted by twitter users helps ensure that the most important of these reach your attention in a timely fashion.</dd>
+            </dl>
+            <h4>Evaluation</h4>
+            <p>
+                In order to make a basic evaluation of the current attitude, it is useful to simply sit and read for a while. In general, it seems possible to observe a regular (and somewhat predictable) pattern - those unaffected are for the most part calm or even derisive of the attention the issue is recieving. As it comes closer to affecting them, turning up nearby to them, friends or family, the attitude becomes more serious and concerned. 
+            </p>
+            <p>
+                More specific concerns are easily identified. Many feel the issue is distracting from other issues important to them, many are confused that the issue is attracting so much attention when other issues of proven fatality are ignored (common comparisons with regular flu, HIV, car crashes). While in the early stages of the conversation hand washing receiving significant attention, in general the symbol of preventative measures has now become the face mask.
+            </p>
+        </div>
+        
+        <script type="text/javascript">
+            window.addEvent('domready', function () {
+                create_footnotes('footnotes');
+            });
+        </script>
+        
+        
+    </body>
+</html>
