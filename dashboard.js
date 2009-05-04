@@ -20,13 +20,13 @@ function add_entry(destination, message, position) {
     }
     var message_element = Element('div',{'class': 'message'})
     var user_ref = Element('div', {'class': 'from_user'})
-    user_ref.appendChild(Element('a',{'href': 'http://twitter.com/'+message.from_user}).set('text',message.from_user));
+    user_ref.appendChild(Element('a',{'href': 'http://twitter.com/'+message.from_user, 'target': '_blank'}).set('text',message.from_user));
     message_element.appendChild(user_ref);
     message_element.appendChild(Element('img', {'class': 'profile_image'}).set('src',message.profile_image_url));
     var text = Element('div')
     var processed_text = message.text;
-    processed_text = processed_text.replace(/(http:\/\/[^ ]+)/g, '<a href="$1">$1</a>');
-    processed_text = processed_text.replace(/(#[^ ]+)/g, '<a href="http://search.twitter.com/search?q=$1">$1</a>');
+    processed_text = processed_text.replace(/(http:\/\/[^ ]+)/g, '<a href="$1" target="_blank">$1</a>');
+    processed_text = processed_text.replace(/#([^ ]+)/g, '<a href="http://search.twitter.com/search?q=%23$1" target="_blank">#$1</a>');
     text.innerHTML = processed_text;
     message_element.appendChild(text);
     message_element.inject(container, position);
