@@ -256,3 +256,8 @@ ul.tabs {
     .tabs li.selected {
         background-color: #222;
     }
+    
+div.search {
+    font-size: 8pt;
+    color: #555;
+}
