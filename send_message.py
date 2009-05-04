@@ -25,7 +25,11 @@ class TwitterSearch(object):
         query = dict(q=self.term)
         if self.last_id:
             query['since_id'] = self.last_id
-        fh = urllib2.urlopen('http://search.twitter.com/search.json?%s' % urllib.urlencode(query))
+	try:
+        	fh = urllib2.urlopen('http://search.twitter.com/search.json?%s' % urllib.urlencode(query))
+	except urllib2.URLError, e:
+		time.sleep(60)
+		return []
         result = simplejson.load(fh)
         
         for r in result['results']:
@@ -36,7 +40,7 @@ class TwitterSearch(object):
         return result['results']
         
         
-ts = TwitterSearch('#swineflu')
+ts = TwitterSearch('#swineflu OR #h1n1 OR H1N1 OR "swine flu"')
 vtect = TwitterSearch('from:veratect OR from:cdcemergency')
 
 conn = stomp.Connection()
@@ -46,6 +50,9 @@ conn.connect()
 pre_load = dict()
 
 while True:
+
+    messages = []
+
     for r in vtect.fetch():
         channel = 'reliable'
         
@@ -63,10 +70,7 @@ while True:
         simplejson.dump({'%s_load' % channel: pre_load[channel]}, f)
         
         f.close()
-        print "Sending new entry: %s" % r['text']
-        conn.send(simplejson.dumps(r), destination='/topic/%s' % channel)
-            
-        time.sleep(1)
+        messages.append((channel, r))
         
     for r in ts.fetch():
         if re.search(r'http://', r['text']):
@@ -88,14 +92,28 @@ while True:
         simplejson.dump({'%s_load' % channel: pre_load[channel]}, f)
         
         f.close()
+        messages.append((channel, r))
+
+    messages.sort(lambda a,b: cmp(int(a[1]['id']), int(b[1]['id'])))
+
+    waiting = 0.0
+
+	 
+    for channel,r in messages:
         print "Sending new entry: %s" % r['text'].encode('ascii','ignore')
         conn.send(simplejson.dumps(r), destination='/topic/%s' % channel)
-            
-        time.sleep(1)
-    
-    #conn.send(simplejson.dumps(dict(text="Happy test test", from_user="testtwitter", profile_image_url="http://s3.amazonaws.com/twitter_production/profile_images/186623658/hari_normal.jpg")), destination="/topic/twitter")
         
-    time.sleep(random.randint(30,60))
+        wait = random.random()*4
+
+        time.sleep(wait)
+        waiting += wait  
+    #conn.send(simplejson.dumps(dict(text="Happy test test", from_user="testtwitter", profile_image_url="http://s3.amazonaws.com/twitter_production/profile_images/186623658/hari_normal.jpg")), destination="/topic/twitter")
+    
+    if waiting < 20.0:
+        print "Waiting %0.2fs til recall" % waiting
+        time.sleep(20.0-waiting)
+
+    #time.sleep(random.randint(30,60))
 
 
 
