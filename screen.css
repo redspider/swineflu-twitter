@@ -235,6 +235,7 @@ ul.tabs {
 }
 
     .tabs li {
+        list-style-type: none;
         float: left;
         width: 120px;
         height: 16px;
