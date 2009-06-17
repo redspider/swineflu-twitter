@@ -1,232 +1,416 @@
-<html>
-    <head>
-        <title>H1N1 Quick Information</title>
-        <link rel="stylesheet" type="text/css" href="screen.css" />
-        <link rel="stylesheet" type="text/css" media="print" href="print.css" />
-        <link rel="stylesheet" href="mobile.css" media="handheld, only screen and (max-device-width: 480px)" type="text/css" />
-        <script src="http://ajax.googleapis.com/ajax/libs/mootools/1.2.1/mootools-yui-compressed.js"></script>
-        <script src="script.js"></script>
-        <meta name="viewport" content="width=320" />
-    </head>
-    <body>
-        <div class="header screen_only">
-            <ul class="tabs">
-                <li class="selected">Information</li>
-                <li><a href="preparation.html">Preparation</a></li>
-                <li><a href="dashboard">Global dashboard</a></li>
-                <li><a href="notes.html">Notes</a></li>
-            </ul>
-            <div id="redspider">
-                <a href="http://redspider.co.nz" target="_blank" style="color: #aaa; text-decoration: none"><span style="color: #722">red</span>spider.co.nz</a>
-                0800 020 478
-            </div>
-        </div>
-        <div class="column" id="mobile_links">
-            <h4>Shortcuts</h4>
-            <ul>
-                <li><a href="#current_nz_status">Current NZ Status?</a></li>
-                <li><a href="#what_is_h1n1">What is Swine Influenza?</a></li>
-                <li><a href="#preventing_infection">Preventing infection</a></li>
-                <li><a href="#symptoms">How do I know if I've got it?</a></li>
-                <li><a href="#medical_attention">When should I seek medical attention?</a></li>
-            </ul>
-        </div>
-        <div class="column" id="column1">
-            <h3>Information</h3>
-            <img class="screen_only" src="swine_flu.jpg" />
-            <a name="current_nz_status"><h4>Current Status</h4></a>
-            <table class="status">
-                <tr><th>Last updated</th><td class="clear">12th Jun, 2009</td></tr>
-                <tr><th>WHO alert level</th><td class="who_5">Phase 6 of 6</td></tr>
-                <tr><th>NZ alert level</th><td class="yellow">Yellow</td></tr>
-                <tr><th>Countries affected</th><td class="clear">80+<sup>1</sup></td></tr>
-                <tr><th>NZ cases confirmed</th><td class="clear">&lt;27<sup>2</sup></td></tr>
-                <tr><th>Worldwide cases</th><td class="clear">28,774+<sup>1</sup></td></tr>
-            </table>
-            <div class="note">
-                <small class="note"><sup>1</sup>Statistics currently derived from Wikipedia</small>
-            </div>
-            <div class="note">
-                <small class="note"><sup>2</sup>Updated from <a href="http://www.moh.govt.nz/moh.nsf/indexmh/mexican-swine-influenza-update-270409">NZ Ministry of Health</a></small>
-            </div>
-            <div style="display: none">
-            <h5>Major centre status</h5>
-            <table class="status">
-                <tr><th>Northland</th><td class="green">Clear</td></tr>
-                <tr><th>Auckland</th><td class="yellow">13 infected</td></tr>
-                <tr><th>Waikato</th><td class="green">Clear</td></tr>
-                <tr><th>Bay of Plenty</th><td class="green">Clear</td></tr>
-                <tr><th>Gisbourne</th><td class="green">Clear</td></tr>
-                <tr><th>Hawkes Bay</th><td class="green">Clear</td></tr>
-                <tr><th>Taranaki</th><td class="green">Clear</td></tr>
-                <tr><th>Wanganui</th><td class="green">Clear</td></tr>
-                <tr><th>Manawatu</th><td class="green">Clear</td></tr>
-                <tr><th>Wairarapa</th><td class="green">Clear</td></tr>
-                <tr><th>Wellington</th><td class="green">Clear</td></tr>
-                <tr><th>Nelson Bays</th><td class="green">Clear</td></tr>
-                <tr><th>Marlborough</th><td class="green">Clear</td></tr>
-                <tr><th>West Coat</th><td class="green">Clear</td></tr>
-                <tr><th>Canterbury</th><td class="green">Clear</td></tr>
-                <tr><th>Timaru/Oamaru</th><td class="green">Clear</td></tr>
-                <tr><th>Otago</th><td class="green">Clear</td></tr>
-                <tr><th>Southland</th><td class="green">Clear</td></tr>
-            </table>
-            </div>
-            <a name="what_is_h1n1"><h4>What is Swine Influenza?</h4></a>
-            <p>
-                Swine Influenza is the common name now given to a new type of Flu virus, derived in part from human influenzavirus type A, subtype H1N1, and in part from strains of influenza virus normally found only in pigs.
-            </p>
-            <p>
-                The new virus appears to transmit from human to human, and indications so far suggest it is capable of becoming a pandemic.
-            </p>
-            <h4>What's the risk?</h4>
-            <p>
-                At the moment the risk factor seems low. While quarantine procedures seem unlikely to prevent the eventual spread of the virus, they are having some success. More importantly, relatively few individuals are known to have died from the disease, and indeed it seems rare that sufferers even require hospitalisation.
-            </p>
-            <p>
-                The Tamiflu antiviral appears effective and New Zealand is reasonably well supplied. Following the preparation checklist below is useful for all potential disaster scenarios.
-            </p>
-            
-            <h4>Recommended Reading</h4>
-            <ul>
-                <li><a href="http://www.moh.govt.nz/moh.nsf/indexmh/mexican-swine-influenza-update-270409">NZ Ministry of Health statement</a></li>
-                <li><a href="http://www.cdc.gov/swineflu/swineflu_you.htm">CDC Summary</a></li>
-                <li><a href="http://www.cdc.gov/swineflu/key_facts.htm">Key Facts about Swine Influenza (CDC)</a></li>
-                <li><a href="http://www.pandemicroadshow.org.nz/PandemicRoadshowResources.html">Pandemic preparation resources</a></li>
-            </ul>
-            <p>
-                For more information of varying reliability, see the <a href="#sources">sources</a> at the end of the page.
-            </p>
-        </div>
-        <div class="column" id="column2">
-            <h3>Prevention</h3>
-            <a name="preventing_infection"><h4>Preventing infection</h4></a>
-            <dl>
-                <dt>Avoid close contact</dt>
-                <dd>
-                    Avoid close contact with people who are sick. When you are sick, keep your distance from others to help protect them.
-                </dd>
-                <dt>Stay home when sick</dt>
-                <dd>
-                    If at all possible, stay home from work, school and errands when you are sick to help prevent others from catching your illness.
-                </dd>
-                <dt>Cover your mouth and nose</dt>
-                <dd>
-                    When coughing or sneezing, cover your mouth and nose with a tissue. Dispose of tissues promptly and carefully.
-                </dd>
-                <dt>Clean your hands</dt>
-                <dd>
-                    Wash your hands often. Alcohol-based hand sanitisers are effective.
-                </dd>
-                <dt>Avoid touching your eyes, nose or mouth</dt>
-                <dd>
-                    Germs are often spread when a person touches something that is contaiminated, then touches his or her eyes, nose or mouth.
-                </dd>
-                <dt>Practice other good health habits</dt>
-                <dd>
-                    Get plenty of sleep, be physically active, manage stress, drink plenty of fluids and eat nutrious food.
-                </dd>
-            </dl>
-            <h4>Prevention questions</h4>
-            <dl>
-                <dt>Can eating pork result in infection?</dt>
-                <dd>No. Eating properly handled and cooked pork and pork products is safe. Cooking pork to an internal temperature of 160&deg;F (72&deg;C) kills the swine flu virus as it does other bacteria and viruses.</dd>
-                <dt>Will Tamiflu or Relenza help?</dt>
-                <dd>Yes, Tamiflu and Relenza, both antivirals, appear to be effective against this strain at this time.</dd>
-                <dt>Will antibiotics help?</dt>
-                <dd>No, antibiotics are only effective against bacteria, not viruses. Your Doctor may prescribe antibiotics to deal with secondary infections during Treatment.</dd>
-                <dt class="screen_only">Will natural remedies help?</dt>
-                <dd class="screen_only">There are no known natural remedies capable of combating a virus directly. Secondary effects, such as improving immune response, are unknown.</dd>
-                <dt>I was vaccinated against the normal flu, will this help?</dt>
-                <dd>Definitive information is not yet available, but general expert consensus seems to be that the vaccinations given for the current seasonal flu will not prevent infection by Swine Influenza.</dd>
-                <dt>Will wearing a mask help?</dt>
-                <dd>Masks can help reduce the risk infection, both directly and by preventing the wearer from touching the nose or mouth. They must be used correctly however, and are only a limited solution. Masks should be available from your pharmacist.</dd>
-            </dl>
-        </div>
-        <div class="column" id="column3">
-            <h3>Symptoms + Treatment</h3>
-            <a name="symptoms"><h4>How do I know if I've got it?</h4></a>
-            <p>
-                Swine Influenza can cause a wide range of symptoms, including <strong>fever, cough, sore throat, body aches, headache, chills and fatigue</strong>. Some people have reported <strong>diarrhea and vomiting</strong> associated with swine flu. As with regular flu, Swine Influenza can vary form mild to severe: pneumonia, respiratory failure and even death is possible.
-            </p>
-            <p>
-                It takes between 1 and 3 days for the infection to become apparent.
-            </p>
-            <a name="medical_attention"><h4>When to seek medical attention</h4></a>
-            <p>
-                When presenting with any flu symptoms, you should telephone your normal medical professional or (NZ) <b>Healthline on 0800 611 116</b> (Do not just turn up at the waiting room, you may infect others).
-            </p>
-            <p>
-                In the event of any of the following, you should seek emergency medical care immediately:
-                <ul class="prep_list">
-                    <li>Difficulty breathing or chest pain</li>
-                    <li>Purple or blue discolouration of the lips</li>
-                    <li>Vomiting and unable to keep liquids down</li>
-                    <li>Signs of dehydration such as dizziness when standing, absence of urination, or in infants, a lack of tears when they cry</li>
-                    <li>Less responsive than normal or becomes confused</li>
-                </ul>
-                In children, the following additional warning signs apply:
-                <ul class="prep_list">
-                    <li>Fast breathing or trouble breathing</li>
-                    <li>Bluish skin color</li>
-                    <li>Not drinking enough fluids</li>
-                    <li>Not waking up or not interacting</li>
-                    <li>Being so irritable that the child does not want to be held</li>
-                    <li>Flu-like symptoms improve but then return with a fever and worse cough</li>
-                    <li>Fever with a rash</li>
-                </ul>
-                If in doubt, seek care. Better safe than sorry.
-            </p>
-            <h4>Important home treatment notes</h4>
-            <dl>
-                <dt>The CDC has a comprehensive home care guide</dt>
-                <dd>Please see <a href="http://www.cdc.gov/swineflu/guidance_homecare.htm?s_cid=tw_epr_61">Interim Guidance for Swine Influenza: Taking Care of a Sick Person in Your Home</a></dd>
-                <dt><b>Do NOT use medicines containing asprin for children or teenagers</b></dt>
-                <dd>Use of asprin to treat symptoms of viral illnesses increases the risk of developing <a href="http://www.ninds.nih.gov/disorders/reyes_syndrome/reyes_syndrome.htm">Reye's Syndrome</a>. Ibuprofen and similar are ok.</dd>
-                <dt>Stay at home for 7 days after symptoms cease</dt>
-                <dd>In order to avoid exposing others to the virus, you should remain at home for 7 days after your symptoms have ceased. For children, this should be extended to 10 days.</dd>
-            </dl>
-        </div>
-        <div class="footnotes" id="footnote_column">
-            <h4>Links</h4>
-            <ol id="footnotes"></ol>
-        </div>
-        <div id="footer">
-            <div class="sources">
-                <a name="sources"></a>
-                <ul>
-                    <li><a href="http://en.wikipedia.org/wiki/2009_H1N1_flu_outbreak">Wikipedia</a></li>
-                <li><a href="https://twitter.com/Veratect">@Veratect</a> (Twitter)</li>
-                <li><a href="https://twitter.com/CDCemergency">@CDCemergency</a> (Twitter)</li>
-                <li><a href="http://pandemicchronicle.com/">Pandemic Chronicle</a> (Blog)</li>
-                <li><a href="http://flutrackers.com/">FluTrackers.com</a> (Forum)</li>
-                <li><a href="http://search.twitter.com/search?q=%23swineflu">#swineflu</a> (Twitter)</li
-                <li><a href="http://biosurveillance.typepad.com/biosurveillance/">Bio-Surveillance</a> (Blog)</li>
-                <li><a href="http://www.nzherald.co.nz/nz/news/article.cfm?c_id=1&objectid=10568935">NZ Herald</a> (Article)</li>
-                <li><a href="http://www.redcross.org.nz/shopping-basket/index.php?cat=1">NZ Red Cross</a> (Shop)</li>
-                <li><a href="http://www.pandemicroadshow.org.nz/">Pandemic Roadshow</a> (Site)</li>
-                <li><a href="http://news.google.com/news?pz=1&ned=nz&hl=en&q=swine+flu">Google News</a> (Aggregator)</li>
-                <li><a href="http://www.flickr.com/photos/tags/swineflu/">Flickr</a> (Aggregator)</li>
-                <li><a href="http://www.youtube.com/results?search_type=&search_query=swine+flu&aq=f">YouTube</a> (Aggregator)</li>
-                <li><a href="http://www.moh.govt.nz/">NZ Ministry of Health</a> (Site)</li>
-                <li><a href="http://twitter.com/sanjayguptacnn">Dr Sanjay Gupta</a> (Twitter)</li>
-                <li><a href="http://www.cdc.gov/swineflu/masks.htm?s_cid=tw_epr_76">CDC on Facemasks</a> (Article)</li>
-                <li><a href="http://www.reddit.com/r/pandemic/">Reddit.com</a> (Aggregator)</li>
-                <li><a href="http://en.wikipedia.org/wiki/Cytokine_storm">Cytokine storm</a> (Article)</li>
-                </ul>
-            </div>
-            <div class="info">
-                Information provided in the public domain, sourced from a variety of public, official sources. This site does not qualify as medical advice, if you have any doubts, contact a qualified health professional immediately.<br />
-                Corrections or updates should be sent to <a href="mailto:richard@redspider.co.nz">richard@redspider.co.nz</a><br />
-            </div>
-        </div>
-        
-        <script type="text/javascript">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- HTML Tidy options -i -w 0 -asxhtml -utf8 -->
+<head>
+  <title>H1N1 Quick Information</title>
+  <link rel="stylesheet" type="text/css" href="screen.css" />
+  <link rel="stylesheet" type="text/css" media="print" href="print.css" />
+  <link rel="stylesheet" href="mobile.css" media="handheld, only screen and (max-device-width: 480px)" type="text/css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/mootools/1.2.1/mootools-yui-compressed.js" type="text/javascript">
+</script>
+  <script src="script.js" type="text/javascript">
+</script>
+  <meta name="viewport" content="width=320" />
+</head>
+
+<body>
+  <div class="header screen_only">
+    <ul class="tabs">
+      <li class="selected">Information</li>
+
+      <li><a href="preparation.html">Preparation</a></li>
+
+      <li><a href="dashboard">Global dashboard</a></li>
+
+      <li><a href="notes.html">Notes</a></li>
+    </ul>
+
+    <div id="redspider">
+      <a href="http://redspider.co.nz" target="_blank" style="color: #aaa; text-decoration: none"><span style="color: #722">red</span>spider.co.nz</a> <span class="tel">0800 020 478</span>
+    </div>
+  </div>
+
+  <div class="column" id="mobile_links">
+    <h4>Shortcuts</h4>
+
+    <ul>
+      <li><a href="#current_nz_status">Current NZ status?</a></li>
+
+      <li><a href="#what_is_h1n1">What is swine influenza?</a></li>
+
+      <li><a href="#preventing_infection">Preventing infection</a></li>
+
+      <li><a href="#symptoms">How do I know if I've got it?</a></li>
+
+      <li><a href="#medical_attention">When should I seek medical attention?</a></li>
+    </ul>
+  </div>
+
+  <div class="column" id="column1">
+    <h3>Information</h3><img class="screen_only" src="swine_flu.jpg" alt="Photo of woman with mask on" />
+
+    <h4><a name="current_nz_status" id="current_nz_status">Current status</a></h4>
+
+    <table class="status">
+      <tr>
+        <th>Last updated:</th>
+
+        <td class="clear">12th Jun, 2009</td>
+      </tr>
+
+      <tr>
+        <th>WHO alert level:</th>
+
+        <td class="who_5">Phase 6 of 6</td>
+      </tr>
+
+      <tr>
+        <th>NZ alert level:</th>
+
+        <td class="red">Red</td>
+      </tr>
+
+      <tr>
+        <th>Countries affected:</th>
+
+        <td class="clear">80+</td>
+      </tr>
+
+      <tr>
+        <th>NZ cases confirmed:</th>
+
+        <td class="clear">27</td>
+      </tr>
+
+      <tr>
+        <th>Worldwide cases:</th>
+
+        <td class="clear">28,774+</td>
+      </tr>
+    </table>
+
+    <div style="display: none">
+      <h5>Major centre status</h5>
+
+      <table class="status">
+        <tr>
+          <th>Northland</th>
+
+          <td class="green">Clear</td>
+        </tr>
+
+        <tr>
+          <th>Auckland</th>
+
+          <td class="yellow">13 infected</td>
+        </tr>
+
+        <tr>
+          <th>Waikato</th>
+
+          <td class="green">Clear</td>
+        </tr>
+
+        <tr>
+          <th>Bay of Plenty</th>
+
+          <td class="green">Clear</td>
+        </tr>
+
+        <tr>
+          <th>Gisbourne</th>
+
+          <td class="green">Clear</td>
+        </tr>
+
+        <tr>
+          <th>Hawkes Bay</th>
+
+          <td class="green">Clear</td>
+        </tr>
+
+        <tr>
+          <th>Taranaki</th>
+
+          <td class="green">Clear</td>
+        </tr>
+
+        <tr>
+          <th>Wanganui</th>
+
+          <td class="green">Clear</td>
+        </tr>
+
+        <tr>
+          <th>Manawatu</th>
+
+          <td class="green">Clear</td>
+        </tr>
+
+        <tr>
+          <th>Wairarapa</th>
+
+          <td class="green">Clear</td>
+        </tr>
+
+        <tr>
+          <th>Wellington</th>
+
+          <td class="green">Clear</td>
+        </tr>
+
+        <tr>
+          <th>Nelson Bays</th>
+
+          <td class="green">Clear</td>
+        </tr>
+
+        <tr>
+          <th>Marlborough</th>
+
+          <td class="green">Clear</td>
+        </tr>
+
+        <tr>
+          <th>West Coat</th>
+
+          <td class="green">Clear</td>
+        </tr>
+
+        <tr>
+          <th>Canterbury</th>
+
+          <td class="green">Clear</td>
+        </tr>
+
+        <tr>
+          <th>Timaru/Oamaru</th>
+
+          <td class="green">Clear</td>
+        </tr>
+
+        <tr>
+          <th>Otago</th>
+
+          <td class="green">Clear</td>
+        </tr>
+
+        <tr>
+          <th>Southland</th>
+
+          <td class="green">Clear</td>
+        </tr>
+      </table>
+    </div>
+
+    <h4><a name="what_is_h1n1" id="what_is_h1n1">What is swine influenza?</a></h4>
+
+    <p>Swine influenza is the common name now given to a new type of flu virus, derived in part from human influenza virus type A subtype H1N1, and in part from strains of the influenza virus usually found in pigs.</p>
+
+    <p>The new virus appears to transmit from human to human, and indications so far suggest it is capable of becoming a pandemic.</p>
+
+    <h4>What's the risk?</h4>
+
+    <p>At the moment the risk factor seems low. While quarantine procedures seem unlikely to prevent the eventual spread of the virus, they are having some success. More importantly, relatively few individuals are known to have died from the disease, and indeed it seems rare that sufferers even require hospitalisation.</p>
+
+    <p>The Tamiflu antiviral appears effective and New Zealand is reasonably well supplied. Following the preparation checklist below is useful for all potential disaster scenarios.</p>
+
+    <h4>Recommended reading</h4>
+
+    <ul>
+      <li><a href="http://www.moh.govt.nz/moh.nsf/indexmh/mexican-swine-influenza-update-270409">NZ Ministry of Health statement</a></li>
+
+      <li><a href="http://www.cdc.gov/swineflu/swineflu_you.htm">CDC Summary</a></li>
+
+      <li><a href="http://www.cdc.gov/swineflu/key_facts.htm">Key Facts about Swine Influenza (CDC)</a></li>
+
+      <li><a href="http://www.pandemicroadshow.org.nz/PandemicRoadshowResources.html">Pandemic preparation resources</a></li>
+    </ul>
+
+    <p>For more information of varying reliability, see the <a href="#sources">sources</a> at the end of the page.</p>
+  </div>
+
+  <div class="column" id="column2">
+    <h3>Prevention</h3>
+
+    <h4><a name="preventing_infection" id="preventing_infection">Preventing infection</a></h4>
+
+    <dl>
+      <dt>Avoid close contact</dt>
+
+      <dd>Avoid close contact with people who are sick. When you are sick, keep your distance from others to help protect them.</dd>
+
+      <dt>Stay home when sick</dt>
+
+      <dd>If at all possible, stay home from work, school and errands when you are sick to help prevent others from catching your illness.</dd>
+
+      <dt>Cover your mouth and nose</dt>
+
+      <dd>When coughing or sneezing, cover your mouth and nose with a tissue. Dispose of tissues promptly and carefully.</dd>
+
+      <dt>Clean your hands</dt>
+
+      <dd>Wash your hands often with soap and water. Alcohol-based hand sanitisers are also effective.</dd>
+
+      <dt>Avoid touching your eyes, nose or mouth</dt>
+
+      <dd>The virus is often spread when a person touches something that is contaminated, then touches his or her eyes, nose or mouth.</dd>
+
+      <dt>Practice other good health habits</dt>
+
+      <dd>Get plenty of sleep, be physically active, manage stress, drink plenty of fluids and eat nutritious food.</dd>
+    </dl>
+
+    <h4>Prevention questions</h4>
+
+    <dl>
+      <dt>Can eating pork result in infection?</dt>
+
+      <dd>No. Eating properly handled and cooked pork and pork products is safe. Cooking pork to an internal temperature of at least 72°C (160°F) kills the swine flu virus as it does other pathogens.</dd>
+
+      <dt>Will Tamiflu or Relenza help?</dt>
+
+      <dd>Yes. Tamiflu and Relenza, both antivirals, appear to be effective against this strain at this time.</dd>
+
+      <dt>Will antibiotics help?</dt>
+
+      <dd>No. Antibiotics are only effective against bacteria, not viruses. However, your doctor may prescribe antibiotics to deal with secondary infections during treatment.</dd>
+
+      <dt class="screen_only">Will natural remedies help?</dt>
+
+      <dd class="screen_only">No. There are no known natural remedies capable of fighting a virus directly. Secondary effects such as improving immune response are unknown.</dd>
+
+      <dt>I was vaccinated against the normal flu, will this help?</dt>
+
+      <dd>No. Definitive information is not yet available, but the consensus seems to be that the vaccinations given for the current seasonal flu will not prevent infection by swine influenza.</dd>
+
+      <dt>Will wearing a mask help?</dt>
+
+      <dd>Yes. Masks can help reduce the risk of infection, both directly and by preventing the wearer from touching the nose or mouth. They must be used correctly however, and are only a limited solution. Masks should be available from your pharmacist.</dd>
+    </dl>
+  </div>
+
+  <div class="column" id="column3">
+    <h3>Symptoms and treatment</h3>
+
+    <h4><a name="symptoms" id="symptoms">How do I know if I've got it?</a></h4>
+
+    <p>Swine influenza can cause a wide range of symptoms, including <strong>fever, cough, sore throat, body aches, headache, chills and fatigue</strong>. Some people have reported <strong>diarrhea and vomiting</strong> associated with swine flu. As with regular flu, swine influenza can vary from mild to severe: pneumonia, respiratory failure and even death is possible.</p>
+
+    <p>It takes between 1 and 3 days for the infection to become apparent.</p>
+
+    <h4><a name="medical_attention" id="medical_attention">When to seek medical attention</a></h4>
+
+    <p>If you have flu symptoms, telephone your doctor, your normal medical professional for advice, or call Healthline on <span class="tel">0800 611 116</span>. To avoid infecting others, don't visit your doctor until you have spoken with a medical professional.</p>
+
+    <p>However, if you have any of the following symptoms, you should seek emergency medical care immediately:</p>
+
+    <ul class="prep_list">
+      <li>Difficulty breathing or chest pain</li>
+
+      <li>Purple or blue discolouration of the lips</li>
+
+      <li>Vomiting and unable to keep liquids down</li>
+
+      <li>Signs of dehydration such as dizziness when standing, absence of urination, or in infants, a lack of tears when they cry</li>
+
+      <li>Less responsive than normal or becomes confused</li>
+    </ul>In children, the following additional warning signs apply:
+
+    <ul class="prep_list">
+      <li>Fast breathing or trouble breathing</li>
+
+      <li>Bluish skin color</li>
+
+      <li>Not drinking enough fluids</li>
+
+      <li>Not waking up or not interacting</li>
+
+      <li>Being so irritable that the child does not want to be held</li>
+
+      <li>Flu-like symptoms improve but then return with a fever and worse cough</li>
+
+      <li>Fever with a rash</li>
+    </ul>If in doubt, seek care. Better safe than sorry.
+
+    <h4>Important home treatment notes</h4>
+
+    <dl>
+      <dt>The CDC has a comprehensive home care guide</dt>
+
+      <dd>Please see <a href="http://www.cdc.gov/swineflu/guidance_homecare.htm?s_cid=tw_epr_61">Interim Guidance for Swine Influenza: Taking Care of a Sick Person in Your Home</a></dd>
+
+      <dt>Do <strong>not</strong> use medicines containing aspirin for children or teenagers</dt>
+
+      <dd>Use of aspirin to treat symptoms of viral illnesses increases the risk of developing <a href="http://www.ninds.nih.gov/disorders/reyes_syndrome/reyes_syndrome.htm">Reye's syndrome</a>. Ibuprofen (Nurofen) and similar are OK.</dd>
+
+      <dt>Stay at home for 7 days after symptoms cease</dt>
+
+      <dd>In order to avoid exposing others to the virus, you should remain at home for 7 days after your symptoms have ceased. For children, this should be extended to 10 days.</dd>
+    </dl>
+  </div>
+
+  <div class="footnotes" id="footnote_column">
+    <h4>Links</h4>
+
+    <ol id="footnotes"></ol>
+  </div>
+
+  <div id="footer">
+    <div class="sources">
+      <a name="sources" id="sources"></a>
+
+      <ul>
+        <li><a href="http://en.wikipedia.org/wiki/2009_H1N1_flu_outbreak">Wikipedia</a></li>
+
+        <li><a href="https://twitter.com/Veratect">@Veratect</a> (Twitter)</li>
+
+        <li><a href="https://twitter.com/CDCemergency">@CDCemergency</a> (Twitter)</li>
+
+        <li><a href="http://pandemicchronicle.com/">Pandemic Chronicle</a> (Blog)</li>
+
+        <li><a href="http://flutrackers.com/">FluTrackers.com</a> (Forum)</li>
+
+        <li><a href="http://search.twitter.com/search?q=%23swineflu">#swineflu</a> (Twitter)</li>
+
+        <li><a href="http://biosurveillance.typepad.com/biosurveillance/">Bio-Surveillance</a> (Blog)</li>
+
+        <li><a href="http://www.nzherald.co.nz/nz/news/article.cfm?c_id=1&amp;objectid=10568935">NZ Herald</a> (Article)</li>
+
+        <li><a href="http://www.redcross.org.nz/shopping-basket/index.php?cat=1">NZ Red Cross</a> (Shop)</li>
+
+        <li><a href="http://www.pandemicroadshow.org.nz/">Pandemic Roadshow</a> (Site)</li>
+
+        <li><a href="http://news.google.com/news?pz=1&amp;ned=nz&amp;hl=en&amp;q=swine+flu">Google News</a> (Aggregator)</li>
+
+        <li><a href="http://www.flickr.com/photos/tags/swineflu/">Flickr</a> (Aggregator)</li>
+
+        <li><a href="http://www.youtube.com/results?search_type=&amp;search_query=swine+flu&amp;aq=f">YouTube</a> (Aggregator)</li>
+
+        <li><a href="http://www.moh.govt.nz/">NZ Ministry of Health</a> (Site)</li>
+
+        <li><a href="http://twitter.com/sanjayguptacnn">Dr Sanjay Gupta</a> (Twitter)</li>
+
+        <li><a href="http://www.cdc.gov/swineflu/masks.htm?s_cid=tw_epr_76">CDC on Facemasks</a> (Article)</li>
+
+        <li><a href="http://www.reddit.com/r/pandemic/">Reddit.com</a> (Aggregator)</li>
+
+        <li><a href="http://en.wikipedia.org/wiki/Cytokine_storm">Cytokine storm</a> (Article)</li>
+      </ul>
+    </div>
+
+    <div class="info">
+      Information provided in the public domain, sourced from a variety of public, official sources. This site does not constitute medical advice. If you have any doubts, contact a qualified health professional immediately.<br />
+      Corrections or updates should be sent to <a href="mailto:richard@redspider.co.nz">richard@redspider.co.nz</a><br />
+    </div>
+  </div><script type="text/javascript">
+//<![CDATA[
             window.addEvent('domready', function () {
                 create_footnotes('footnotes');
             });
-        </script>
-        
-        
-    </body>
+  //]]>
+  </script>
+</body>
 </html>
