@@ -41,7 +41,7 @@ class TwitterSearch(object):
         
         
 ts = TwitterSearch('#swineflu OR #h1n1 OR H1N1 OR "swine flu"')
-vtect = TwitterSearch('from:veratect OR from:cdcemergency')
+vtect = TwitterSearch('from:veratect OR from:cdcemergency OR from:minhealthnz')
 
 conn = stomp.Connection()
 conn.start()
